@@ -16,5 +16,5 @@ func main() {
 		Addr:    "127.0.0.1:8443",
 		Handler: serverMux,
 	}
-	server.ListenAndServeTLS("server.crt", "server.key")
+	server.ListenAndServeTLS("server.pem", "server.key")
 }
