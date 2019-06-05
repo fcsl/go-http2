@@ -1,11 +1,14 @@
+// +build ignore
+
 package main
 
 import (
 	"fmt"
+	"net"
 	"net/http"
 	"time"
+
 	"golang.org/x/net/http2"
-	"net"
 )
 
 type serverHandler struct {

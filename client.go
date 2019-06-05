@@ -1,12 +1,15 @@
+// +build ignore
+
 package main
 
 import (
-	"net/http"
-	"golang.org/x/net/http2"
 	"crypto/tls"
-	"net"
-	"log"
 	"fmt"
+	"log"
+	"net"
+	"net/http"
+
+	"golang.org/x/net/http2"
 )
 
 func main() {

@@ -13,7 +13,7 @@ func main() {
 	serverMux := http.NewServeMux()
 	serverMux.HandleFunc("/", handler)
 	server := http.Server{
-		Addr:    "127.0.0.1:8443",
+		Addr:    ":8443",
 		Handler: serverMux,
 	}
 	server.ListenAndServeTLS("server.pem", "server.key")
